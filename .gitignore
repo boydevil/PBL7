@@ -1,2 +1,5 @@
 /garbage_classification
-/xception
+/test
+/Server
+rename.py
+/models
