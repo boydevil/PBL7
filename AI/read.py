@@ -11,9 +11,9 @@ warnings.filterwarnings("ignore", category=FutureWarning)
 np.set_printoptions(suppress=True)
 
 # Load the model
-model = load_model('Models/model.h5', compile=False)
+model = load_model(r"C:\Users\ADMIN\Desktop\Hoc\DUT7\PBL7\AI\Models\model.h5", compile=False)
 # Load the labels
-class_names = open('Models/labels.txt', 'r').readlines()
+class_names = open(r'C:\Users\ADMIN\Desktop\Hoc\DUT7\PBL7\AI\Models\labels.txt', 'r').readlines()
 IMAGE_WIDTH = 71
 IMAGE_HEIGHT = 71
 # Create the array of the right shape to feed into the keras model
