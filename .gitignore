@@ -1,5 +1,5 @@
 /garbage_classification
-/test
+/__pycache__
 /Server
 rename.py
-/models
+garbage.ipynb
