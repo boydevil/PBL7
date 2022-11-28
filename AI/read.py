@@ -21,10 +21,9 @@ IMAGE_HEIGHT = 71
 # determined by the first position in the shape tuple, in this case 1.
 data = np.ndarray(shape=(1, IMAGE_WIDTH, IMAGE_HEIGHT, 3), dtype=np.float32)
 
-def predict(USER_ID, IMG_ID):
+def predict(URL):
     # Replace this with the path to your image
-    BASE_URL = 'https://res.cloudinary.com/dj6tlm6my/image/upload/'
-    URL = BASE_URL + USER_ID + '/' +IMG_ID
+    # URL = 'https://res.cloudinary.com/' + USER_ID + '/image/upload/PBL6/' + IMG_ID
     response = requests.get(URL)
     image = Image.open(BytesIO(response.content)).convert('RGB')
 
