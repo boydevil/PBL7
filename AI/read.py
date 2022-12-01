@@ -44,7 +44,7 @@ def predict(URL):
     # run the inference
     prediction = model.predict(data)
     index = np.argmax(prediction)
-    class_name = class_names[index]
-    confidence_score = prediction[0][index]
+    class_name = str(class_names[index])
+    confidence_score = str(prediction[0][index]*100)
 
-    return str(class_name) + ' ' + str(confidence_score)
+    return class_name, confidence_score
